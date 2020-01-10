@@ -13,6 +13,26 @@ class Sildernav extends Component{
                     path:'/admin/home',
                     id:'0'
                 },
+                {
+                    name:'权限管理',
+                    icon:'setting',
+                    path:'/admin/setting',
+                    id:'1',
+                    children:[
+                        {
+                            name:'角色列表',
+                            icon:'home',
+                            path:'/admin/setting/userlist',
+                            id:'1-0'
+                        },
+                        {
+                            name:'角色权限',
+                            icon:'home',
+                            path:'/admin/setting/set',
+                            id:'1-1'
+                        }
+                    ]
+                }
             ],
         }
     }
